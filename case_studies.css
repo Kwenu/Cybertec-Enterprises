@@ -1,0 +1,375 @@
+@font-face {
+  font-family: SackersGothic;
+  src: url(Sackers\ Gothic\ Std\ Light.otf);
+}
+
+* {
+  font-family: SackersGothic;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: inherit;
+  transition: all 0.2s linear;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 50%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+header.sticky {
+  background-color: #000;
+  /* background: linear-gradient(to right, #6e6c6c, #000) !important; */
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  height: 150px;
+}
+
+header.sticky a {
+  color: #fff; /* Set text color to white for the sticky state */
+}
+
+header .menu-icon {
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  margin-left: 1350px;
+  margin-top: 30px;
+}
+
+header .menu-icon .bx {
+  color: #000000;
+  padding: 0px 10px 0px 10px;
+  display: none;
+}
+
+header .menu-icon .bx:hover {
+  color: #ffffff;
+}
+
+.logo {
+  margin-top: 30px;
+  position: fixed;
+}
+
+.logo img{
+  height: 80px;
+  width: 160px;
+  margin-left: 70px;
+}
+
+nav ul{
+  position: relative;
+  left: 53%;
+}
+
+nav ul li {
+  margin-top: -80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0.5rem;
+  list-style: none;
+}
+
+nav ul li a {
+  margin-right: 3px;
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: 2.4rem;
+  padding: .5rem 1rem;
+  color: #000000;
+}
+
+nav a.active,
+nav a:hover {
+  color: #ffffff;
+  background-color: transparent;
+  /* text-decoration: underline; */
+}
+
+section:nth-child(even) {
+    background: #e9e6e6;
+}
+
+/* =================================================================================== */
+section:nth-of-type(2){
+    /* margin-top: 100px; */
+    padding-top: 10rem;
+}
+
+section:nth-of-type(2) img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.container {
+    padding: 64px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.info{
+    line-height: 1.5;
+}
+
+/* ===================1========================= */
+
+  
+.column-66 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+  
+.column-33 {
+    float: left;
+    width: 40%;
+    padding: 20px;
+    
+}
+
+/* =====================2======================= */
+
+.column-66-type2 {
+    float: left;
+    width: 40%;
+    padding: 20px;
+}
+  
+.column-33-type2 {
+    float: left;
+    width: 45%;
+    padding: 20px;
+}
+
+/* =======================3===================== */
+
+.column-66-type3 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+  
+.column-33-type3 {
+    float: left;
+    width: 40%;
+    padding: 20px;
+}
+
+/* ====================4======================== */
+  
+.column-66-type4 {
+    float: left;
+    width: 50%;
+    padding: 30px;
+}
+  
+.column-33-type4 {
+    float: left;
+    width:40%;
+    padding: 20px;
+}
+
+/* ======================hiding=========================== */
+
+.text {
+    font-size: 24px;
+    line-height: 1.5;
+}
+.moreText {
+    display: none;
+}
+.read-more-btn {
+    padding: 15px 60px;
+    background-color: rgb(149, 170, 197);
+    color: rgb(53, 49, 49);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.text.show-more .moreText {
+    display: inline;
+}
+.text.show-more .dots {
+    display: none;
+}
+/* CSS */
+.read-more-btn {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+
+  /* ================================================= */
+
+  
+  .large-font {
+    font-size: 35px;
+  }
+  .long-large-font {
+    font-size: 35px;
+  }
+  
+  .xlarge-font {
+    font-size: 55px
+  }
+  .heading {
+    text-align: center;
+    font-size: 64px
+  }
+  .bullets li{
+    list-style-type: none;
+	box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+    font-size: 1.6rem;
+    background-color: white;
+    max-width: 70rem;
+	margin:0.8rem auto;
+	border: 0.18rem solid rgb(255, 255, 255);
+	padding: 1rem 1vw 1rem;
+	border-radius: 0.5rem;
+  }
+  .button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #04AA6D;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+    max-width: 200%;
+    border-radius: 05rem;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+    .column-66-type2,
+    .column-33-type2 {
+      width: 100%;
+      text-align: center;
+    }
+    .column-66-type3,
+    .column-33-type3 {
+      width: 100%;
+      text-align: center;
+    }
+    
+    img {
+      margin: auto;
+    }
+  }
+
+/* ------------------footer-------------------- */
+
+section .content4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  margin-left: 350px;
+  padding: 0px 10px;
+}
+
+section .content4 img {
+  height: 150px;
+  width: 275px;
+  margin-top: 70px;
+  margin-left: -300px;
+}
+
+section .content4 .box {
+  margin-left: -250px;
+  display: block;
+  padding: 50px;
+}
+
+section .content4 .box h3 {
+  text-align: center;
+  justify-content: center;
+  padding: .5rem 0;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+section .content4 .box a {
+  text-align: center;
+  justify-content: center;
+  display: block;
+  padding: .5rem 0;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+section .content4 .box a:hover {
+  color: #3c3c3c;
+}
+
+section .credit {
+  text-align: center;
+  border-top: .1rem solid rgba(0,0,0,.1);
+  font-size: 2rem;
+  color: #000;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+section .credit p {
+  font-size: 12px;
+  margin-left: 1150px;
+  margin-top: -22px;
+}
+
+section .credit a {
+  color: #008624;
+}
