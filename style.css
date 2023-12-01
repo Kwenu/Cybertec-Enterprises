@@ -1,10 +1,5 @@
-@font-face {
-    font-family: SackersGothic;
-    src: url(Sackers\ Gothic\ Std\ Light.otf);
-}
-
 * {
-    font-family: SackersGothic;
+    font-family: 'Play', sans-serif;
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -81,11 +76,11 @@ header .menu-icon .bx:hover {
 
 nav ul{
     position: relative;
-    left: 53%;
+    left: 80%;
 }
 
 nav ul li {
-    margin-top: -80px;
+    margin-top: -70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +91,7 @@ nav ul li {
 nav ul li a {
     margin-right: 3px;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.4rem;
     border-radius: 2.4rem;
     padding: .5rem 1rem;
     color: #000000;
@@ -119,9 +114,10 @@ section:nth-child(even) {
 }
 
 section .slideshow-text h1{
-    margin-left: 300px;
+    margin-left: 340px;
     position: absolute;
     top: 50px;
+    letter-spacing: 1px;
     font-size: 30px;
     color: #ffffff;
 }
@@ -129,7 +125,8 @@ section .slideshow-text h1{
 section .slideshow-text p{
     text-align: center;
     padding: 0px 25px;
-    /* margin-left: -20px; */
+    margin-left: 130px;
+    letter-spacing: 1px;
     position: absolute;
     top: 138px;  
     font-size: 22px;
@@ -213,16 +210,16 @@ section .slideshow-text .btn {
 }
 
 .content2 .row h1 {
-    font-size: 32px;
+    font-size: 38px;
 }
 
 .content2 .column .container h2 {
-    font-size: 25px;
+    font-size: 28px;
     padding: 1rem 0.5rem;
 }
 
 .content2 .column .container p {
-    font-size: 15px;
+    font-size: 16px;
     padding: 1rem 1rem;
 }
 
@@ -280,15 +277,15 @@ section .slideshow-text .btn {
 }
 
 .content3 .row h1 {
-    font-size: 32px;
+    font-size: 38px;
 }
 
 .content3 .row h2 {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .content3 .row p {
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 20px;
 }
 
@@ -333,14 +330,14 @@ section .content4 img {
 section .content4 .box {
     margin-left: -250px;
     display: block;
-    padding: 50px;
+    padding: 50px 70px;
 }
 
 section .content4 .box h3 {
     text-align: center;
     justify-content: center;
     padding: .5rem 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #000;
 }
 
@@ -349,18 +346,18 @@ section .content4 .box a {
     justify-content: center;
     display: block;
     padding: .5rem 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #555;
 }
 
 section .content4 .box a:hover {
-    color: #3c3c3c;
+    color: rgb(0, 35, 233);
 }
 
 section .credit {
     text-align: center;
     border-top: .1rem solid rgba(0,0,0,.1);
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #000;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -368,7 +365,7 @@ section .credit {
 }
 
 section .credit p {
-    font-size: 12px;
+    font-size: 15px;
     margin-left: 1150px;
     margin-top: -22px;
 }
