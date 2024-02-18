@@ -1,2 +1,0 @@
-# Cybertec-Enterprises
-Company Website
