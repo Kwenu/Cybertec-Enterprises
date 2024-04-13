@@ -10,12 +10,8 @@
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: #e9e6e6;
-}
-
 html {
-    font-size: 50%;
+    font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
@@ -26,85 +22,90 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
+    background-color: #000; /* Set initial background color to black */
+    height: 120px; /* Adjust the height of the navigation bar */
 }
 
-header.sticky {
+.sticky {
     background-color: #000;
     position: fixed;
-    top: -50px;
-    width: 100%;
-    height: 150px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
-header.sticky a {
+.sticky a {
     color: #fff;
     /* Set text color to white for the sticky state */
 }
 
 header .menu-icon {
-    font-size: 22px;
+    font-size: 16px; /* Adjust the font size of the icon */
     cursor: pointer;
     z-index: 1000;
-    display: flex;
-    margin-left: 1350px;
-    margin-top: 30px;
 }
 
 header .menu-icon .bx {
     color: #000000;
-    padding: 0px 10px 0px 10px;
-    display: none;
+    font-size: 20px;
 }
 
-header .menu-icon .bx:hover {
+.menu-icon .bx:hover {
     color: #ffffff;
-}
-
-.logo {
-    margin-top: 30px;
-    position: fixed;
 }
 
 .logo img {
-    height: 80px;
-    width: 160px;
-    margin-left: 70px;
+    height: 30px; /* Adjust the height of the logo */
+    width: auto;
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+.navbar-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 nav ul {
-    position: relative;
-    left: 80%;
+    list-style: none;
+    display: flex;
 }
 
 nav ul li {
-    margin-top: -70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0.5rem;
-    list-style: none;
+    margin-right: 1.5rem; /* Adjusted margin */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
 }
 
 nav ul li a {
-    margin-right: 3px;
-    text-decoration: none;
-    font-size: 2.4rem;
-    border-radius: 2.4rem;
-    padding: .5rem 1rem;
-    color: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem; /* Adjust font size */
+    padding: 0.5rem 0.6rem;
+    transition: color 0.3s ease;
 }
 
-nav a.active,
-nav a:hover {
-    color: #ffffff;
-    background-color: transparent;
+nav ul li a:hover {
+    color: #fff;
+}
+
+section:nth-child(even) {
+    background: #e9e6e6;
+}
+
+header.sticky {
+    background-color: #000; /* Keep background color black when sticky */
 }
 
 /* ----------------our partners---------------- */
@@ -116,6 +117,7 @@ section:nth-of-type(2) {
 }
 
 .heading {
+    margin-top: 50px;
     font-size: 55px;
     padding: 30px 0px;
     margin-left: 580px;
@@ -235,73 +237,215 @@ section:nth-of-type(2) {
     }
 }
 
-/* ------------------footer-------------------- */
-
-section .content4 {
-    border-top: .1rem solid rgba(0, 0, 0, .1);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1.5rem;
-    margin-left: 350px;
-    padding: 0px 10px;
+/* Footer Styles */
+footer {
+    background-color: #f4f4f4;
+    padding: 2rem 1rem;
+    text-align: center;
 }
 
-section .content4 img {
-    height: 150px;
-    width: 275px;
-    margin-top: 70px;
-    margin-left: -300px;
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-section .content4 .box {
-    margin-left: -250px;
+.footer-content img {
+    height: 12rem;
+    width: auto;
+    margin-bottom: 2rem;
+    margin-left: 20px;
+}
+
+.footer-links {
+    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.box {
+    flex: 1;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.box h3 {
+    font-size: 2.5rem; /* Increase font size for section titles */
+    margin-bottom: 1.5rem; /* Increase margin bottom for better separation */
+    color: #000000; /* White text color */
+}
+
+.box a {
     display: block;
-    padding: 50px 70px;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: #000000;
+    transition: color 0.3s ease;
 }
 
-section .content4 .box h3 {
-    text-align: center;
-    justify-content: center;
-    padding: .5rem 0;
-    font-size: 3rem;
-    color: #000;
+.box a:hover {
+    color: #b6b4b4;
+    text-decoration: none;
 }
 
-section .content4 .box a {
-    text-align: center;
-    justify-content: center;
-    display: block;
-    padding: .5rem 0;
-    font-size: 2rem;
-    color: #555;
+.credit {
+    background-color: #f4f4f4;
+    color: #000000;
+    padding: 2rem;
+    font-size: 1.6rem;
 }
 
-section .content4 .box a:hover {
-    color: rgb(0, 35, 233);
+.credit a img {
+    height: 3rem;
 }
 
-section .credit {
-    text-align: center;
-    border-top: .1rem solid rgba(0, 0, 0, .1);
-    font-size: 2.5rem;
-    color: #000;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    margin-top: 1.5rem;
+/* Additional padding between link sections */
+.box:not(:last-child) {
+    margin-right: 2rem;
 }
 
-section .credit img {
-    margin-left: 300px;
-    margin-top: -100px;
-    width: 100px;
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+    nav ul {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    nav ul li {
+        margin-left: 1.5rem;
+    }
+
+    .heading {
+        margin-left: 0;
+        text-align: center;
+    }
 }
 
-section .credit p {
-    font-size: 15px;
-    margin-left: 1090px;
-    margin-top: -20px;
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #000000;
+        z-index: 1000;
+        transition: all 0.5s;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    nav ul li a {
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
+    .logo img {
+        margin-left: 1rem;
+    }
+
+    .title,
+    .title1 {
+        padding: 2rem 2rem; /* Adjust padding */
+        font-size: 2.5rem; /* Adjust font size */
+    }
+
+    /* Additional styles for sticky navigation */
+    header.sticky {
+        background-color: #000;
+    }
+
+    header.sticky nav ul li a {
+        color: #fff;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem;
+    }
+
+    .logo img {
+        margin-left: 0;
+    }
 }
 
-section .credit a {
-    color: #008624;
+@media screen and (max-width: 576px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        z-index: 1000;
+        padding-top: 5rem; /* Adjust padding */
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    nav ul li a {
+        font-size: 1.6rem; /* Adjust font size */
+        padding: 1rem 0;
+    }
+    
+    .slideshow-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .slideshow-text p {
+        font-size: 1.6rem;
+    }
+
+    .slideshow-text .btn {
+        font-size: 1.4rem;
+        padding: 0.8rem 1.6rem;
+    }
+
+    .content4 img {
+        height: 4rem;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+    }
+
+    .box a {
+        font-size: 1.4rem;
+    }
+
+    .credit {
+        font-size: 1.4rem;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+    }
 }

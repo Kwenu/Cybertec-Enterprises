@@ -1,107 +1,100 @@
 * {
-    font-family: 'Play', sans-serif;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    text-transform: inherit;
-    transition: all 0.2s linear;
-    scroll-behavior: smooth;
+  font-family: "Play", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: inherit;
+  transition: all 0.2s linear;
+  scroll-behavior: smooth;
 }
 
 html {
-    font-size: 50%;
-    overflow-x: hidden;
-    scroll-padding-top: 5.5rem;
-    scroll-behavior: smooth;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  height: 120px; /* Adjust the height of the navigation bar */
 }
 
-header.sticky {
-    background-color: #000;
-    position: fixed;
-    top: -50px;
-    width: 100%;
-    height: 150px;
+.sticky {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
-header.sticky a {
-    color: #fff;
-    /* Set text color to white for the sticky state */
+.sticky a {
+  color: #fff;
+  /* Set text color to white for the sticky state */
 }
 
 header .menu-icon {
-    font-size: 22px;
-    cursor: pointer;
-    z-index: 1000;
-    display: flex;
-    margin-left: 1350px;
-    margin-top: 30px;
+  font-size: 16px; /* Adjust the font size of the icon */
+  cursor: pointer;
+  z-index: 1000;
 }
 
 header .menu-icon .bx {
-    color: #000000;
-    padding: 0px 10px 0px 10px;
-    display: none;
+  color: #000000;
+  font-size: 20px;
 }
 
-header .menu-icon .bx:hover {
-    color: #ffffff;
-}
-
-.logo {
-    margin-top: 30px;
-    position: fixed;
+.menu-icon .bx:hover {
+  color: #ffffff;
 }
 
 .logo img {
-    height: 80px;
-    width: 160px;
-    margin-left: 70px;
+  height: 30px; /* Adjust the height of the logo */
+  width: auto;
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+.navbar-sticky {
+  background-color: #000;
 }
 
 nav ul {
-    position: relative;
-    left: 80%;
+  list-style: none;
+  display: flex;
 }
 
 nav ul li {
-    margin-top: -70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0.5rem;
-    list-style: none;
+  margin-right: 1.5rem; /* Adjusted margin */
+}
+
+nav ul li:last-child {
+  margin-right: 0;
 }
 
 nav ul li a {
-    margin-right: 3px;
-    text-decoration: none;
-    font-size: 2.4rem;
-    border-radius: 2.4rem;
-    padding: .5rem 1rem;
-    color: #000000;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem; /* Adjust font size */
+  padding: 0.5rem 0.6rem;
+  transition: color 0.3s ease;
 }
 
-nav a.active,
-nav a:hover {
-    color: #ffffff;
-    background-color: transparent;
-    /* text-decoration: underline; */
+nav ul li a:hover {
+  color: #fff;
 }
 
 /* section:nth-child(even) {
@@ -111,479 +104,652 @@ nav a:hover {
 /* ----------------------cybertec services--------------------- */
 
 .container {
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .container .image {
-    position: relative;
-    width: 0%;
-    margin: 0;
-    /* height: 1000px; */
-    /* opacity: 0;
+  position: relative;
+  width: 0%;
+  margin: 0;
+  /* height: 1000px; */
+  /* opacity: 0;
     /* position: absolute; */
-    transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .text {
-    position: absolute;
-    top: 300px;
-    width: 100%;
-    padding: 120px;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    opacity: 0;
-    animation: right 1s ease forwards; 
+  position: absolute;
+  top: 300px;
+  width: 100%;
+  padding: 120px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  opacity: 0;
+  animation: right 1s ease forwards;
 }
 
 .text h1 {
-    margin-left: 500px;
-    position: absolute;
-    top: 100px;
-    font-size: 30px;
-    color: #ffffff;
+  margin-left: 500px;
+  position: absolute;
+  top: 100px;
+  font-size: 30px;
+  color: #ffffff;
 }
 
 /* ---------------service cards---------------- */
 
 .dark {
-    background: #110f16;
+  background: #110f16;
+}
+
+.dark #pageHeaderTitle {
+  margin-top: 100px;
 }
 
 a,
 a:hover {
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
 #pageHeaderTitle {
-    margin-top: 300px;
-    margin: 0rem 0px;
-    padding: 10px;
-    text-align: center;
-    font-size: 55px;
-    color: #fff;
+  margin-top: 300px;
+  margin: 0rem 0px;
+  padding: 10px;
+  text-align: center;
+  font-size: 55px;
+  color: #fff;
 }
 
 #pageSubHeader {
-    margin-top: 400px;
-    margin: 2rem 0;
-    padding: 10px;
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
+  margin-top: 400px;
+  margin: 2rem 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
 }
 
 .postcard {
-    flex-wrap: wrap;
-    display: flex;
-    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
-    border-radius: 10px;
-    margin: 0 2rem 4rem 2rem;
-    overflow: hidden;
-    position: relative;
-    color: #ffffff;
+  flex-wrap: wrap;
+  display: flex;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+  border-radius: 10px;
+  margin: 0 2rem 4rem 2rem;
+  overflow: hidden;
+  position: relative;
+  color: #ffffff;
 }
 
 .postcard.dark {
-    background-color: #18151f;
+  background-color: #18151f;
 }
 
 .postcard.t-dark {
-    color: #18151f;
+  color: #18151f;
 }
 
 .postcard a {
-    color: inherit;
+  color: inherit;
 }
 
 .postcard h1,
 .postcard .h1 {
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    line-height: 1.2;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .postcard__text .postcard__title {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .postcard__img {
-    max-height: 180px;
-    width: 100%;
-    object-fit: cover;
-    position: relative;
+  max-height: 180px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
 }
 
 .postcard__img_link {
-    display: contents;
+  display: contents;
 }
 
 .postcard__bar {
-    width: 50px;
-    height: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    background-color: #424242;
-    transition: width 0.2s ease;
+  width: 50px;
+  height: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #424242;
+  transition: width 0.2s ease;
 }
 
 .postcard__text {
-    padding: 1.5rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+  padding: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .postcard__preview-txt {
-    font-size: 18px;
-    padding: 5px 0px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: justify;
-    height: 100%;
+  font-size: 18px;
+  padding: 5px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  height: 100%;
 }
 
 .postcard__preview-txt ul {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .postcard:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(-70deg, #424242, transparent 50%);
-    opacity: 1;
-    border-radius: 10px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(-70deg, #424242, transparent 50%);
+  opacity: 1;
+  border-radius: 10px;
 }
 
 .postcard:hover .postcard__bar {
-    width: 100px;
+  width: 100px;
 }
 
 /* ------------------COLORS---------------- */
 
 .postcard.dark.green .postcard__tagbox .green.play:hover {
-    background: #79dd09;
-    color: black;
+  background: #79dd09;
+  color: black;
 }
 
 .green .postcard__title {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .green .postcard__bar {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .green .postcard__text .postcard__preview-txt {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .green .postcard__title:hover {
-    color: #79dd09;
+  color: #79dd09;
 }
 
 .green .postcard__bar {
-    background-color: #79dd09;
+  background-color: #79dd09;
 }
 
 .green::before {
-    background-image: linear-gradient(-30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+  background-image: linear-gradient(
+    -30deg,
+    rgba(121, 221, 9, 0.1),
+    transparent 50%
+  );
 }
 
 .green:nth-child(2n)::before {
-    background-image: linear-gradient(30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+  background-image: linear-gradient(
+    30deg,
+    rgba(121, 221, 9, 0.1),
+    transparent 50%
+  );
 }
 
 .postcard.dark.blue .postcard__tagbox .blue.play:hover {
-    background: #0076bd;
+  background: #0076bd;
 }
 
 .blue .postcard__title {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .blue .postcard__bar {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .blue .postcard__text .postcard__preview-txt {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .blue .postcard__title:hover {
-    color: #0076bd;
+  color: #0076bd;
 }
 
 .blue .postcard__bar {
-    background-color: #0076bd;
+  background-color: #0076bd;
 }
 
 .blue::before {
-    background-image: linear-gradient(-30deg, rgba(0, 118, 189, 0.1), transparent 50%);
+  background-image: linear-gradient(
+    -30deg,
+    rgba(0, 118, 189, 0.1),
+    transparent 50%
+  );
 }
 
 .blue:nth-child(2n)::before {
-    background-image: linear-gradient(30deg, rgba(0, 118, 189, 0.1), transparent 50%);
+  background-image: linear-gradient(
+    30deg,
+    rgba(0, 118, 189, 0.1),
+    transparent 50%
+  );
 }
 
 .postcard.dark.red .postcard__tagbox .red.play:hover {
-    background: #bd150b;
+  background: #bd150b;
 }
 
 .red .postcard__text .postcard__preview-txt {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .red .postcard__title {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .red .postcard__bar {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .red .postcard__title:hover {
-    color: #bd150b;
+  color: #bd150b;
 }
 
 .red .postcard__bar {
-    background-color: #bd150b;
+  background-color: #bd150b;
 }
 
 .red::before {
-    background-image: linear-gradient(-30deg, rgba(189, 21, 11, 0.1), transparent 50%);
+  background-image: linear-gradient(
+    -30deg,
+    rgba(189, 21, 11, 0.1),
+    transparent 50%
+  );
 }
 
 .red:nth-child(2n)::before {
-    background-image: linear-gradient(30deg, rgba(189, 21, 11, 0.1), transparent 50%);
+  background-image: linear-gradient(
+    30deg,
+    rgba(189, 21, 11, 0.1),
+    transparent 50%
+  );
 }
 
 .yellow .postcard__title {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .yellow .postcard__bar {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .yellow .postcard__text .postcard__preview-txt {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .postcard.dark.yellow .postcard__tagbox .yellow.play:hover {
-    background: #bdbb49;
-    color: black;
+  background: #bdbb49;
+  color: black;
 }
 
 .yellow .postcard__title:hover {
-    color: #bdbb49;
+  color: #bdbb49;
 }
 
 .yellow .postcard__bar {
-    background-color: #bdbb49;
+  background-color: #bdbb49;
 }
 
 .yellow::before {
-    background-image: linear-gradient(-30deg, rgba(189, 187, 73, 0.1), transparent 50%);
+  background-image: linear-gradient(
+    -30deg,
+    rgba(189, 187, 73, 0.1),
+    transparent 50%
+  );
 }
 
 .yellow:nth-child(2n)::before {
-    background-image: linear-gradient(30deg, rgba(189, 187, 73, 0.1), transparent 50%);
+  background-image: linear-gradient(
+    30deg,
+    rgba(189, 187, 73, 0.1),
+    transparent 50%
+  );
 }
 
 @media screen and (min-width: 769px) {
-    .postcard {
-        flex-wrap: inherit;
-    }
+  .postcard {
+    flex-wrap: inherit;
+  }
 
-    .postcard__title {
-        font-size: 2rem;
-    }
+  .postcard__title {
+    font-size: 2rem;
+  }
 
-    .postcard__tagbox {
-        justify-content: start;
-    }
+  .postcard__tagbox {
+    justify-content: start;
+  }
 
-    .postcard__img {
-        max-width: 300px;
-        max-height: 100%;
-        transition: transform 0.3s ease;
-    }
+  .postcard__img {
+    max-width: 300px;
+    max-height: 100%;
+    transition: transform 0.3s ease;
+  }
 
-    .postcard__text {
-        padding: 3rem;
-        width: 100%;
-    }
+  .postcard__text {
+    padding: 3rem;
+    width: 100%;
+  }
 
-    .media.postcard__text:before {
-        content: "";
-        position: absolute;
-        display: block;
-        background: #18151f;
-        top: -20%;
-        height: 130%;
-        width: 55px;
-    }
+  .media.postcard__text:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #18151f;
+    top: -20%;
+    height: 130%;
+    width: 55px;
+  }
 
-    .postcard:hover .postcard__img {
-        transform: scale(1.1);
-    }
+  .postcard:hover .postcard__img {
+    transform: scale(1.1);
+  }
 
-    .postcard:nth-child(2n+1) {
-        flex-direction: row;
-    }
+  .postcard:nth-child(2n + 1) {
+    flex-direction: row;
+  }
 
-    .postcard:nth-child(2n+0) {
-        flex-direction: row-reverse;
-    }
+  .postcard:nth-child(2n + 0) {
+    flex-direction: row-reverse;
+  }
 
-    .postcard:nth-child(2n+1) .postcard__text:before {
-        left: -12px !important;
-        transform: rotate(4deg);
-    }
+  .postcard:nth-child(2n + 1) .postcard__text:before {
+    left: -12px !important;
+    transform: rotate(4deg);
+  }
 
-    .postcard:nth-child(2n+0) .postcard__text:before {
-        right: -12px !important;
-        transform: rotate(-4deg);
-    }
+  .postcard:nth-child(2n + 0) .postcard__text:before {
+    right: -12px !important;
+    transform: rotate(-4deg);
+  }
 
-    .postcard.dark.green::before {
-        background-image: linear-gradient(-80deg, rgba(121, 221, 9, 0.1), transparent 50%);
-    }
+  .postcard.dark.green::before {
+    background-image: linear-gradient(
+      -80deg,
+      rgba(121, 221, 9, 0.1),
+      transparent 50%
+    );
+  }
 
-    .postcard.dark.green:nth-child(2n)::before {
-        background-image: linear-gradient(80deg, rgba(121, 221, 9, 0.1), transparent 50%);
-    }
+  .postcard.dark.green:nth-child(2n)::before {
+    background-image: linear-gradient(
+      80deg,
+      rgba(121, 221, 9, 0.1),
+      transparent 50%
+    );
+  }
 
-    .postcard.dark.blue::before {
-        background-image: linear-gradient(-80deg, rgba(0, 118, 189, 0.1), transparent 50%);
-    }
+  .postcard.dark.blue::before {
+    background-image: linear-gradient(
+      -80deg,
+      rgba(0, 118, 189, 0.1),
+      transparent 50%
+    );
+  }
 
-    .postcard.dark.blue:nth-child(2n)::before {
-        background-image: linear-gradient(80deg, rgba(0, 118, 189, 0.1), transparent 50%);
-    }
+  .postcard.dark.blue:nth-child(2n)::before {
+    background-image: linear-gradient(
+      80deg,
+      rgba(0, 118, 189, 0.1),
+      transparent 50%
+    );
+  }
 
-    .postcard.dark.red::before {
-        background-image: linear-gradient(-80deg, rgba(189, 21, 11, 0.1), transparent 50%);
-    }
+  .postcard.dark.red::before {
+    background-image: linear-gradient(
+      -80deg,
+      rgba(189, 21, 11, 0.1),
+      transparent 50%
+    );
+  }
 
-    .postcard.dark.red:nth-child(2n)::before {
-        background-image: linear-gradient(80deg, rgba(189, 21, 11, 0.1), transparent 50%);
-    }
+  .postcard.dark.red:nth-child(2n)::before {
+    background-image: linear-gradient(
+      80deg,
+      rgba(189, 21, 11, 0.1),
+      transparent 50%
+    );
+  }
 
-    .postcard.dark.yellow::before {
-        background-image: linear-gradient(-80deg, rgba(189, 187, 73, 0.1), transparent 50%);
-    }
+  .postcard.dark.yellow::before {
+    background-image: linear-gradient(
+      -80deg,
+      rgba(189, 187, 73, 0.1),
+      transparent 50%
+    );
+  }
 
-    .postcard.dark.yellow:nth-child(2n)::before {
-        background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
-    }
+  .postcard.dark.yellow:nth-child(2n)::before {
+    background-image: linear-gradient(
+      80deg,
+      rgba(189, 187, 73, 0.1),
+      transparent 50%
+    );
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .postcard__text {
-        padding: 2rem 3.5rem;
-    }
+  .postcard__text {
+    padding: 2rem 3.5rem;
+  }
 
-    .postcard__text:before {
-        content: "";
-        position: absolute;
-        display: block;
-        top: -20%;
-        height: 130%;
-        width: 55px;
-    }
-
-    .postcard.dark .postcard__text:before {
-        background: #18151f;
-    }
-}
-
-/* ------------------footer-------------------- */
-
-section .content4 {
-    border-top: .1rem solid rgba(0, 0, 0, .1);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1.5rem;
-    margin-left: 350px;
-    padding: 0px 10px;
-}
-
-section .content4 img {
-    height: 150px;
-    width: 275px;
-    margin-top: 70px;
-    margin-left: -300px;
-}
-
-section .content4 .box {
-    margin-left: -250px;
+  .postcard__text:before {
+    content: "";
+    position: absolute;
     display: block;
-    padding: 50px 70px;
+    top: -20%;
+    height: 130%;
+    width: 55px;
+  }
+
+  .postcard.dark .postcard__text:before {
+    background: #18151f;
+  }
 }
 
-section .content4 .box h3 {
-    text-align: center;
-    justify-content: center;
-    padding: .5rem 0;
-    font-size: 3rem;
-    color: #000;
+/* Footer Styles */
+footer {
+  background-color: #f4f4f4;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
-section .content4 .box a {
-    text-align: center;
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-content img {
+  height: 12rem;
+  width: auto;
+  margin-bottom: 2rem;
+  margin-left: 20px;
+}
+
+.footer-links {
+  margin-right: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.box {
+  flex: 1;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.box h3 {
+  font-size: 2.5rem; /* Increase font size for section titles */
+  margin-bottom: 1.5rem; /* Increase margin bottom for better separation */
+  color: #000000; /* White text color */
+}
+
+.box a {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.box a:hover {
+  color: #b6b4b4;
+  text-decoration: none;
+}
+
+.credit {
+  background-color: #f4f4f4;
+  color: #000000;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+.credit a img {
+  height: 3rem;
+}
+
+/* Additional padding between link sections */
+.box:not(:last-child) {
+  margin-right: 2rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+  nav ul {
     justify-content: center;
-    display: block;
-    padding: .5rem 0;
+    margin-right: 0;
+  }
+
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+    z-index: 1000;
+    transition: all 0.5s;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 1rem 0;
+  }
+
+  nav ul li a {
     font-size: 2rem;
-    color: #555;
+    padding: 1rem 0;
+  }
+
+  .logo img {
+    margin-left: 1rem;
+  }
+
+  .title,
+  .title1 {
+    padding: 2rem 2rem; /* Adjust padding */
+    font-size: 2.5rem; /* Adjust font size */
+  }
+
+  /* Additional styles for sticky navigation */
+  header.sticky {
+    background-color: #000;
+  }
+
+  header.sticky nav ul li a {
+    color: #fff;
+  }
 }
 
-section .content4 .box a:hover {
-    color: rgb(0, 35, 233);
-}
+@media screen and (max-width: 576px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 1000;
+    padding-top: 5rem; /* Adjust padding */
+  }
 
-section .credit {
-    text-align: center;
-    border-top: .1rem solid rgba(0, 0, 0, .1);
-    font-size: 2.5rem;
-    color: #000;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    margin-top: 1.5rem;
-}
+  nav ul.active {
+    display: flex;
+  }
 
-section .credit img {
-    margin-left: 300px;
-    margin-top: -100px;
-    width: 100px;
-}
+  nav ul li {
+    margin: 1rem 0;
+  }
 
-section .credit p {
-    font-size: 15px;
-    margin-left: 1090px;
-    margin-top: -20px;
-}
+  nav ul li a {
+    font-size: 1.6rem; /* Adjust font size */
+    padding: 1rem 0;
+  }
 
-section .credit a {
-    color: #008624;
-}
+  .slideshow-text h1 {
+    font-size: 2.4rem;
+  }
 
-@keyframes right {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
+  .slideshow-text p {
+    font-size: 1.6rem;
+  }
 
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
+  .slideshow-text .btn {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .content4 img {
+    height: 4rem;
+  }
+
+  .box h3 {
+    font-size: 1.8rem;
+  }
+
+  .box a {
+    font-size: 1.4rem;
+  }
+
+  .credit {
+    font-size: 1.4rem;
+  }
 }
