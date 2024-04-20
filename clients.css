@@ -166,6 +166,48 @@ header.sticky {
 .cards .card:nth-child(20) {
   background-image: url("images/Logos/27.png");
 }
+.cards .card:nth-child(21) {
+  background-image: url("images/Logos/31.png");
+}
+.cards .card:nth-child(22) {
+  background-image: url("images/Logos/33.png");
+}
+.cards .card:nth-child(23) {
+  background-image: url("images/Logos/34.png");
+}
+.cards .card:nth-child(24) {
+  background-image: url("images/Logos/45.png");
+}
+.cards .card:nth-child(25) {
+  background-image: url("images/Logos/35.png");
+}
+.cards .card:nth-child(26) {
+  background-image: url("images/Logos/36.png");
+}
+.cards .card:nth-child(27) {
+  background-image: url("images/Logos/37.png");
+}
+.cards .card:nth-child(28) {
+  background-image: url("images/Logos/38.png");
+}
+.cards .card:nth-child(29) {
+  background-image: url("images/Logos/39.png");
+}
+.cards .card:nth-child(30) {
+  background-image: url("images/Logos/40.png");
+}
+.cards .card:nth-child(31) {
+  background-image: url("images/Logos/41.png");
+}
+.cards .card:nth-child(32) {
+  background-image: url("images/Logos/28.png");
+}
+.cards .card:nth-child(33) {
+  background-image: url("images/Logos/29.jpeg");
+}
+
+
+
 .cards_2 .card:nth-child(1) {
   background-image: url("images/Logos/20.png");
 }
@@ -186,6 +228,21 @@ header.sticky {
 }
 .cards_2 .card:nth-child(7) {
   background-image: url("images/Logos/26.png");
+}
+.cards_2 .card:nth-child(8) {
+  background-image: url("images/Logos/42.png");
+}
+.cards_2 .card:nth-child(9) {
+  background-image: url("images/Logos/43.png");
+}
+.cards_2 .card:nth-child(10) {
+  background-image: url("images/Logos/44.png");
+}
+.cards_2 .card:nth-child(11) {
+  background-image: url("images/Logos/32.png");
+}
+.cards_2 .card:nth-child(12) {
+  background-image: url("images/Logos/30.png");
 }
 
 .clients h1 {
