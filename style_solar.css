@@ -143,8 +143,13 @@ header.sticky {
 
 .bg-light #solar {
   margin-top: 140px;
-  margin-left: 160px;
+  margin-left: 84px;
   font-size: 55px;
+}
+
+.bg-light .container .details {
+  margin-left: 400px;
+  margin-top: -10px;
 }
 
 /* Footer Styles */
