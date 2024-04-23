@@ -231,6 +231,17 @@ footer {
   nav ul li {
     margin-left: 1.5rem;
   }
+
+  .bg-light #solar {
+    font-size: 2.5rem; 
+    margin-left: 180px;
+  }
+
+  .bg-light .container .details {
+    margin-top: 0.5rem; /* Further reduce top margin for smaller screens */
+    font-size: 1.4rem;
+    margin-left: 240px; 
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -286,11 +297,22 @@ footer {
     padding: 1rem 1.5rem; /* Adjusted padding */
   }
 
-  .bg-light #solar {
-    margin-left: 0; /* Reset margin */
-    font-size: 4rem; /* Adjust font size for smaller screens */
+  .bg-light {
+    padding-top: 3rem; /* Reduce top padding for smaller screens */
+    padding-bottom: 3rem; /* Reduce bottom padding for smaller screens */
   }
 
+  .bg-light #solar {
+    font-size: 2.5rem; 
+    margin-left: 30px;
+  }
+
+  .bg-light .container .details {
+    margin-top: 0.5rem; /* Further reduce top margin for smaller screens */
+    font-size: 1.4rem;
+    margin-left: 180px; 
+  }
+  
   .content3 .document .btn-primary {
     font-size: 2rem; /* Adjust font size for smaller screens */
   }
@@ -355,6 +377,12 @@ footer {
 
   .bg-light #solar {
     font-size: 3rem; /* Further adjust font size for smaller screens */
+  }
+
+  .bg-light .container .details {
+    margin-top: 0.5rem; 
+    font-size: 1rem;
+    margin-left: 100px; 
   }
 
   .content3 .document .btn-primary {
